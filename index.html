@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ECO MEKHA</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+      <!-- HEADER -->
+  <header class="header">
+
+  <img src="imagens/logo.png" class="logo" alt="Logo Eco Mekha">
+
+  <h1 class="titulo">ECO MEKHA</h1>
+
+</header>
+
+
+
+    </div>
+
+        <nav>
+
+            <a onclick="trocar('home')">
+                Home
+            </a>
+
+            <a onclick="trocar('sobre')">
+                Sobre Nós
+            </a>
+
+            <a onclick="trocar('produtos')">
+                Produtos
+            </a>
+
+            <a onclick="trocar('projetos')">
+                Projetos
+            </a>
+
+            <a onclick="trocar('avaliacoes')">
+                Avaliações
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- BUSCA -->
+    <div class="search">
+
+       
+<div class="search-box">
+
+    <input
+        type="text"
+        placeholder="Buscar..."
+        id="campoBusca"
+        onkeyup="buscarProduto()">
+
+    <span class="lupa">🔍</span>
+
+</div>
+
+    </div>
+<!-- MODAL -->
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal()">
+            &times;
+        </span>
+
+        <img
+        id="imagemProduto"
+        class="modal-img"
+        alt="Imagem Produto">
+
+        <h2 id="tituloProduto">
+            Produto
+        </h2>
+
+        <p id="descricaoProduto">
+            Descrição
+        </p>
+
+        <div class="modal-precos">
+
+            <span
+            id="precoAntigoProduto"
+            class="preco-antigo">
+                R$ 0,00
+            </span>
+
+            <div class="linha-preco">
+
+                <span
+                id="precoProduto"
+                class="preco-atual">
+                    R$ 0,00
+                </span>
+
+                <span
+                id="descontoProduto"
+                class="desconto">
+                    -0%
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+ 
+<!-- HOME -->
+    <section id="home" class="section active">
+
+        <div class="container">
+
+            <!-- PROMOÇÃO -->
+            <div class="promo">
+
+                <img
+                src="imagens/promocao.png"
+                alt="Promoção"
+                class="img-promocao">
+
+                <h2 class="promo-texto">
+                    ATÉ
+                </h2>
+
+                <h1 class="promo-desconto">
+                    50% OFF
+                </h1>
+
+                <p class="promo-subtexto">
+                    Aproveite agora!
+                </p>
+
+            </div>
+
+            <!-- PRODUTOS -->
+            <div class="produtos">
+
+                <h2 class="titulo-destaque">
+                    Destaques do dia!
+                </h2>
+
+                <div class="grid">
+
+                
+<div class="card" onclick="abrirModal(
+'Kit Irrigação Inteligente',
+'Sistema automático para economia de água.',
+'R$ 435,45',
+'R$ 870,90',
+'-50%',
+'imagens/produto1.jpg'
+)">
+                        <img
+                        src="imagens/produto1.jpg"
+                        class="img"
+                        alt="Sistema automático para economia de água.">
+
+                        <p class="nome-produto">
+                           Kit Irrigação Inteligente
+                        </p>
+
+                        <div class="preco-container">
+
+                            <span class="preco-antigo">
+                                R$ 870,90
+                            </span>
+
+                            <div class="linha-preco">
+
+                                <span class="preco">
+                                    R$ 435,45
+                                </span>
+
+                                <span class="desconto">
+                                    -50%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                 
+<div class="card" onclick="abrirModal(
+'Sensor de Solo Smart',
+'Monitoramento de umidade e temperatura.',
+'R$ 322,63',
+'R$ 575,90',
+'-40%',
+'imagens/produto2.jpg'
+)">
+
+                        <img
+                        src="imagens/produto2.jpg"
+                        class="img"
+                        alt="Monitoramento de umidade e temperatura.">
+
+                        <p class="nome-produto">
+                           Sensor de Solo Smart
+                        </p>
+
+                        <div class="preco-container">
+
+                            <span class="preco-antigo">
+                                R$ 575,90
+                            </span>
+
+                            <div class="linha-preco">
+
+                                <span class="preco">
+                                    R$ 322,63
+                                </span>
+
+                                <span class="desconto">
+                                    -40%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+<div class="card" onclick="abrirModal(
+'Composteira Sustentável',
+'Transforma resíduos orgânicos em adubo natural.',
+'R$ 740,26',
+'R$ 870,90',
+'-15%',
+'imagens/produto3.jpg'
+)">
+                        <img
+                        src="imagens/produto3.jpg"
+                        class="img"
+                        alt="Transforma resíduos orgânicos em adubo natural.">
+
+                        <p class="nome-produto">
+                           Composteira Sustentável
+                        </p>
+
+                        <div class="preco-container">
+
+                            <span class="preco-antigo">
+                                R$ 870,90
+                            </span>
+
+                            <div class="linha-preco">
+
+                                <span class="preco">
+                                    R$ 740,26
+                                </span>
+
+                                <span class="desconto">
+                                    -15%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                
+<div class="card" onclick="abrirModal(
+'Estufa Modular Ecológica',
+'Estrutura sustentável para cultivo protegido.',
+'R$ 800,09',
+'R$ 890,90',
+'-10%',
+'imagens/produto4.jpg'
+)">
+
+                        <img
+                        src="imagens/produto4.jpg"
+                        class="img"
+                        alt="Estrutura sustentável para cultivo protegido.">
+
+                        <p class="nome-produto">
+                            Estufa Modular Ecológica
+                        </p>
+                        <div class="preco-container">
+
+                            <span class="preco-antigo">
+                                R$ 890,90
+                            </span>
+
+                            <div class="linha-preco">
+
+                                <span class="preco">
+                                    R$ 800,09
+                                </span>
+
+                                <span class="desconto">
+                                    -10%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BENEFÍCIOS -->
+        <div class="beneficios">
+
+            <div class="beneficio">
+
+                <div class="icone">
+                    🌿
+                </div>
+
+                <div>
+
+                    <h3>
+                        Sustentabilidade
+                    </h3>
+
+                    <p>
+                        Produtos ecológicos e amigos do planeta.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="beneficio">
+
+                <div class="icone">
+                    ✨
+                </div>
+
+                <div>
+
+                    <h3>
+                        Design Moderno
+                    </h3>
+
+                    <p>
+                        Peças pensadas para unir estética e funcionalidade.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="beneficio">
+
+                <div class="icone">
+                    ⭐
+                </div>
+
+                <div>
+
+                    <h3>
+                        Qualidade Premium
+                    </h3>
+
+                    <p>
+                        Materiais selecionados para maior durabilidade.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE -->
+   <section id="sobre" class="section">
+
+    <div class="sobre-container">
+
+        <div class="sobre-imagem">
+
+            <img
+            src="imagens/sobre.jpg"
+            alt="Sobre">
+
+        </div>
+
+        <div class="texto">
+
+            <h2>Cultura da empresa</h2>
+
+            <p>
+                A ECO MEKHA tem como propósito unir sustentabilidade, design moderno e consciência ambiental. A empresa acredita que é possível aliar estilo, qualidade e responsabilidade ecológica em um único produto, promovendo um consumo mais consciente sem abrir mão da estética e da inovação.
+            </p>
+
+            <h2>Como surgiu</h2>
+
+            <p>
+                A marca nasceu da ideia de transformar produtos ecológicos em algo sofisticado, acessível e desejável. A ECO MEKHA foi criada com a missão de inspirar mudanças de hábitos, incentivando escolhas mais sustentáveis no dia a dia e mostrando que a sustentabilidade pode ser moderna, funcional e atrativa.
+            </p>
+
+            <h2>Fundadores</h2>
+
+            <p>
+                A ECO MEKHA foi idealizada por um grupo de empreendedores apaixonados por inovação e meio ambiente: Arthur Holanda de Melo, Guilherme Luiz Morales, João Pedro da Silva Vicente, Marcelo Vieira da Silva, Maria Eduarda do Nascimento Gomes, Murilo, Pablo, Paulo Henrique da Conceição Pereira e Thiago Henrique Pereira Gomes. Cada um contribuiu com suas habilidades e ideias para construir uma marca que une design moderno, qualidade premium e compromisso ambiental.
+
+                    <p>Juntos, eles compartilham o objetivo de transformar o consumo e incentivar práticas mais sustentáveis por meio de produtos que realmente fazem a diferença para o planeta.</p>
+            </p>
+
+            <h2>Contato para compra/dúvidas</h2>
+
+            <p>📧 Email: contato@ecomekha@gmail.com</p>
+
+            <p>📱 Telefone: (11) 96989-9099</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- PRODUTOS -->
+<section id="produtos" class="section">
+
+    <h2 class="titulo-destaque">
+        Produtos
+    </h2>
+
+    <div class="grid">
+
+       
+<div class="card" onclick="abrirModal(
+'Kit Energia Solar Rural',
+'Energia limpa para pequenas produções agrícolas.',
+'R$ 836,90',
+'R$ 945,90',
+'-12%',
+'imagens/produto5.jpg'
+)">
+
+            <img
+            src="imagens/produto5.jpg"
+            class="img"
+            alt="Energia limpa para pequenas produções agrícolas.">
+
+            <p class="nome-produto">
+               Kit Energia Solar Rural
+            </p>
+
+            <div class="preco-container">
+
+                <span class="preco-antigo">
+                    R$ 945,90
+                </span>
+
+                <div class="linha-preco">
+
+                    <span class="preco">
+                        R$ 836,90
+                    </span>
+
+                    <span class="desconto">
+                        -12%
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+<div class="card" onclick="abrirModal(
+'Sistema de Captação da Chuva',
+'Armazenamento e reaproveitamento de água.',
+'R$ 322,63',
+'R$ 460,90',
+'-30%',
+'imagens/produto6.jpg'
+)">
+
+            <img
+            src="imagens/produto6.jpg"
+            class="img"
+            alt="Armazenamento e reaproveitamento de água.">
+
+            <p class="nome-produto">
+                Sistema de Captação da Chuva
+            </p>
+            
+            <div class="preco-container">
+
+                <span class="preco-antigo">
+                    R$ 460,90
+                </span>
+
+                <div class="linha-preco">
+
+                    <span class="preco">
+                        R$ 322,63
+                    </span>
+
+                    <span class="desconto">
+                        -30%
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+     
+<div class="card" onclick="abrirModal(
+'Horta Inteligente Indoor',
+'Cultivo sustentável para ambientes urbanos.',
+'R$ 740,26',
+'R$ 870,90',
+'-15%',
+'imagens/produto7.jpg'
+)">
+            <img
+            src="imagens/produto7.jpg"
+            class="img"
+            alt="Cultivo sustentável para ambientes urbanos.">
+
+            <p class="nome-produto">
+                Horta Inteligente Indoor
+            </p>
+
+            <div class="preco-container">
+
+                <span class="preco-antigo">
+                    R$ 870,90
+                </span>
+
+                <div class="linha-preco">
+
+                    <span class="preco">
+                        R$ 740,26
+                    </span>
+
+                    <span class="desconto">
+                        -15%
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+<div class="card" onclick="abrirModal(
+'Pulverizador Ecológico',
+'Aplicação eficiente com redução de desperdícios.',
+'R$ 539,91',
+'R$ 599,90',
+'-10%',
+'imagens/produto8.jpg'
+)">
+            <img
+            src="imagens/produto8.jpg"
+            class="img"
+            alt="Aplicação eficiente com redução de desperdícios.">
+
+            <p class="nome-produto">
+                Pulverizador Ecológico
+            </p>
+            
+            <div class="preco-container">
+
+                <span class="preco-antigo">
+                    R$ 599,90
+                </span>
+
+                <div class="linha-preco">
+
+                    <span class="preco">
+                        R$ 539,91
+                    </span>
+
+                    <span class="desconto">
+                        -10%
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+   <section id="projetos" class="section">
+
+    <h2 class="titulo-projetos">
+        Projetos Sustentáveis feitos por clientes
+    </h2>
+
+  <div class="grid-projetos">
+
+        <!-- PROJETO 1 -->
+        <div class="card" onclick="abrirModal(
+            'Fazenda Solar Inteligente',
+            'A Fazenda Solar Inteligente integra o Kit Energia Solar Rural com o Sistema de Irrigação Inteligente, criando um ambiente agrícola totalmente autônomo e sustentável. A energia gerada pelos painéis solares é utilizada para alimentar todo o sistema de irrigação automática, garantindo que as plantações recebam a quantidade ideal de água sem desperdício. Isso reduz custos de produção, diminui o impacto ambiental e torna a agricultura mais eficiente mesmo em áreas afastadas.',
+            '',
+            '',
+            '',
+            'imagens/projeto1.jpg'
+        )">
+
+            <img src="imagens/projeto1.jpg" class="img">
+            <p class="nome-produto">Fazenda Solar Inteligente</p>
+
+        </div>
+
+        <!-- PROJETO 2 -->
+        <div class="card" onclick="abrirModal(
+            'Horta Urbana Sustentável',
+            'A Horta Urbana Sustentável combina a Horta Inteligente Indoor com a Composteira Sustentável, permitindo o cultivo de alimentos frescos dentro de ambientes urbanos. Enquanto a horta garante o crescimento controlado das plantas em pequenos espaços, a composteira transforma resíduos orgânicos do dia a dia em adubo natural, fechando um ciclo sustentável de produção.',
+            '',
+            '',
+            '',
+            'imagens/projeto2.jpg'
+        )">
+
+            <img src="imagens/projeto2.jpg" class="img">
+            <p class="nome-produto">Horta Urbana Sustentável</p>
+
+        </div>
+
+        <!-- PROJETO 3 -->
+        <div class="card" onclick="abrirModal(
+            'Reuso Inteligente de Água',
+            'O Reuso Inteligente de Água une o Sistema de Captação da Chuva com o Sensor de Solo Smart, criando um sistema eficiente de gerenciamento hídrico. A água da chuva é coletada e armazenada para ser reutilizada na irrigação, enquanto os sensores monitoram a umidade do solo em tempo real, liberando água apenas quando necessário.',
+            '',
+            '',
+            '',
+            'imagens/projeto3.jpg'
+        )">
+
+            <img src="imagens/projeto3.jpg" class="img">
+            <p class="nome-produto">Reuso Inteligente de Água</p>
+
+        </div>
+
+        <!-- PROJETO 4 -->
+        <div class="card" onclick="abrirModal(
+            'Agricultura de Precisão',
+            'A Agricultura de Precisão utiliza o Sensor de Solo Smart junto ao Pulverizador Ecológico para otimizar o cuidado com as plantações. Os sensores analisam continuamente as condições do solo, como umidade e temperatura, permitindo aplicação precisa de nutrientes.',
+            '',
+            '',
+            '',
+            'imagens/projeto4.jpg'
+        )">
+
+            <img src="imagens/projeto4.jpg" class="img">
+            <p class="nome-produto">Agricultura de Precisão</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- AVALIAÇÕES -->
+<section id="avaliacoes" class="section">
+
+    <h2>Avaliações</h2>
+
+    <div class="grid">
+
+        <!-- AVALIAÇÃO 1 -->
+    
+<div class="card avaliacao-card" onclick="abrirModal(
+'Atendimento impecável',
+'Produto extremamente bem feito, entrega rápida e qualidade excelente. Com certeza comprarei novamente.',
+'',
+'',
+'',
+'imagens/cliente1.jpg'
+)">
+
+    <img src="imagens/cliente1.jpg" class="img" alt="Cliente 1">
+
+    <p class="stars">★★★★★</p>
+
+    <h3 class="titulo-avaliacao">
+        Atendimento impecável
+    </h3>
+
+    <p class="texto-avaliacao">
+        Produto extremamente bem feito, entrega rápida e qualidade excelente.
+        Com certeza comprarei novamente.
+    </p>
+
+</div>
+
+<!-- AVALIAÇÃO 2 -->
+<div class="card avaliacao-card" onclick="abrirModal(
+'Produto maravilhoso',
+'Achei a proposta da marca incrível. O acabamento do produto é muito bonito e sustentável ao mesmo tempo.',
+'',
+'',
+'',
+'imagens/cliente2.jpg'
+)">
+
+    <img src="imagens/cliente2.jpg" class="img" alt="Cliente 2">
+
+    <p class="stars">★★★★★</p>
+
+    <h3 class="titulo-avaliacao">
+        Produto maravilhoso
+    </h3>
+
+    <p class="texto-avaliacao">
+        Achei a proposta da marca incrível. O acabamento do produto é muito bonito
+        e sustentável ao mesmo tempo.
+    </p>
+
+</div>
+
+<!-- AVALIAÇÃO 3 -->
+<div class="card avaliacao-card" onclick="abrirModal(
+'Experiência incrível',
+'Desde o atendimento até a entrega foi tudo perfeito. O produto chegou exatamente como esperado.',
+'',
+'',
+'',
+'imagens/cliente3.jpg'
+)">
+
+    <img src="imagens/cliente3.jpg" class="img" alt="Cliente 3">
+
+    <p class="stars">★★★★★</p>
+
+    <h3 class="titulo-avaliacao">
+        Experiência incrível
+    </h3>
+
+    <p class="texto-avaliacao">
+        Desde o atendimento até a entrega foi tudo perfeito.
+        O produto chegou exatamente como esperado.
+    </p>
+
+</div>
+
+<!-- AVALIAÇÃO 4 -->
+<div class="card avaliacao-card" onclick="abrirModal(
+'Super recomendo',
+'Design moderno, ótima qualidade e proposta ecológica muito interessante. Recomendo demais a marca.',
+'',
+'',
+'',
+'imagens/cliente4.jpg'
+)">
+
+    <img src="imagens/cliente4.jpg" class="img" alt="Cliente 4">
+
+    <p class="stars">★★★★★</p>
+
+    <h3 class="titulo-avaliacao">
+        Super recomendo
+    </h3>
+
+    <p class="texto-avaliacao">
+        Design moderno, ótima qualidade e proposta ecológica muito interessante.
+        Recomendo demais a marca.
+    </p>
+
+</div>
+
+</section>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="fechar" onclick="fecharModal()">
+                &times;
+            </span>
+
+            <img
+id="imagemProduto"
+class="modal-img"
+alt="Imagem Produto">
+            <h2 id="tituloProduto">
+                Produto
+            </h2>
+
+            <p id="descricaoProduto">
+                Descrição
+            </p>
+
+            <h3 id="precoProduto">
+                R$ 0,00
+            </h3>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

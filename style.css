@@ -1,0 +1,515 @@
+/* =========================
+   BASE
+========================= */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background: #f8f6f1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #434D36;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header {
+    background: #434D36;
+    padding: 13px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    color: #CFE0BC;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* =========================
+   NAV
+========================= */
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+nav a {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #3d3f3b;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2f3a22;
+    transform: scale(1.08);
+
+}
+
+/* MENU CENTRAL */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    flex: 1;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 125px;
+    height: auto;
+}
+
+/* =========================
+   BUSCA
+========================= */
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 17px 0;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 11px 14px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 0.85rem;
+    background: transparent;
+    flex: 1;
+}
+
+.lupa {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    display: none;
+    padding: 15px;
+}
+
+.active {
+    display: block;
+}
+
+/* =========================
+   HOME LAYOUT
+========================= */
+
+.container {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+/* =========================
+   PROMOÇÃO
+========================= */
+
+.promo {
+    width: 260px;
+    min-width: 250px;
+    padding: 15px;
+    background: #dfe8ce;
+    border-radius: 13px;
+    text-align: center;
+    height: 400px;
+}
+
+.img-promocao {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.promo-texto {
+    color: #36411f;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.promo-desconto {
+    color: #36411f;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.promo-subtexto {
+    color: #36411f;
+    font-size: 1.5rem;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos {
+    flex: 1;
+}
+
+.titulo-destaque {
+    color: #212615;
+    font-size: 1.4rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* CARD */
+.card {
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEM */
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nome-produto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* PREÇOS */
+
+.preco-container {
+    margin-top: 9px;
+    
+}
+
+.preco-antigo {
+    font-size: 0.8rem;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.linha-preco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.preco {
+    font-size: 1rem;
+    font-weight: bold;
+     text-align: center;
+    
+}
+
+
+
+.desconto {
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+     text-align: center;
+}
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.beneficios {
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.beneficio {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sobre-imagem {
+    width: 40%;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.texto {
+    width: 60%;
+    font-size: 1rem;
+}
+
+.texto h2 {
+    color: #36411f;
+}
+
+.texto p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* =========================
+   AVALIAÇÕES
+========================= */
+
+#avaliacoes h2 {
+    font-size: 1.5rem;
+    color: #212615;
+    margin-bottom: 20px;
+}
+
+.avaliacao-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+
+.titulo-avaliacao {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.texto-avaliacao {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* caixa do modal */
+.modal-content {
+    background: white;
+    width: 600px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative; /* ESSENCIAL pro X funcionar */
+    text-align: center;
+}
+
+/* IMAGEM */
+.modal-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+}
+
+.modal-content p {
+    font-size: 1rem;
+}
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    z-index: 10000;
+}
+.modal-precos {
+    margin-top: 20px;
+    text-align: center;
+}
+.fechar:hover {
+    color: red;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios {
+        flex-direction: column;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+    }
+
+    .sobre-imagem,
+    .texto {
+        width: 100%;
+    }
+ 
+/* =========================
+   PROJETOS - FORÇAR 2x2
+========================= */
+
+#projetos .grid-projetos {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px;
+}
+
+/* cards só do projetos */
+#projetos .card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    cursor: pointer;
+}
+
+/* imagem */
+#projetos .img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* título */
+#projetos .nome-produto {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+#projetos .grid-projetos > .card {
+    width: 100%;
+}
+/* responsivo */
+@media (max-width: 900px) {
+    #projetos .grid-projetos {
+        grid-template-columns: 1fr !important;
+    }
+}/* ========================= */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios {
+        flex-direction: column;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+    }
+
+    .sobre-imagem,
+    .texto {
+        width: 100%;
+    }
+}
+}
