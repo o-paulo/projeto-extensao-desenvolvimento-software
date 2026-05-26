@@ -6,7 +6,6 @@ function trocar(secao) {
     document.getElementById(secao).classList.add('active');
 }
 
-/*MODAL PRODUTO*/
 
 function abrirModal(
     titulo,
@@ -23,7 +22,6 @@ function abrirModal(
 
     document.getElementById("imagemProduto").src = imagem;
 
-    /* PREÇOS */
 
     if(preco) {
 
@@ -44,20 +42,4 @@ function abrirModal(
 }
 function fecharModal() {
     document.getElementById("modal").style.display = "none";
-}
-
-/*BUSCA*/
-function buscarProduto() {
-
-    let input = document.getElementById("campoBusca").value.toLowerCase();
-
-    let produtos = document.querySelectorAll(".card");
-
-    produtos.forEach(produto => {
-
-        let nome = produto.innerText.toLowerCase();
-
-        produto.style.display = nome.includes(input) ? "block" : "none";
-
-    });
 }

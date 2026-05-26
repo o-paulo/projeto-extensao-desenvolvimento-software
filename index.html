@@ -7,9 +7,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ECO MEKHA</title>
+    <title>Eco Mekha</title>
+    
+    <link rel="icon" href="imagens/logo.jpg" sizes="32x32">
 
-    <!-- FONTES -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +24,11 @@
 
 <body>
 
-      <!-- HEADER -->
   <header class="header">
 
-  <img src="imagens/logo.png" class="logo" alt="Logo Eco Mekha">
+  <img src="imagens/logo.jpg" class="logo" alt="Logo Eco Mekha">
 
-  <h1 class="titulo">ECO MEKHA</h1>
+  <h1 class="titulo">Eco Mekha</h1>
 
 </header>
 
@@ -61,24 +62,7 @@
 
     </header>
 
-    <!-- BUSCA -->
-    <div class="search">
 
-       
-<div class="search-box">
-
-    <input
-        type="text"
-        placeholder="Buscar..."
-        id="campoBusca"
-        onkeyup="buscarProduto()">
-
-    <span class="lupa">🔍</span>
-
-</div>
-
-    </div>
-<!-- MODAL -->
 <div id="modal" class="modal">
 
     <div class="modal-content">
@@ -130,12 +114,12 @@
 
 </div>
  
-<!-- HOME -->
+
     <section id="home" class="section active">
 
         <div class="container">
 
-            <!-- PROMOÇÃO -->
+    
             <div class="promo">
 
                 <img
@@ -157,7 +141,7 @@
 
             </div>
 
-            <!-- PRODUTOS -->
+        
             <div class="produtos">
 
                 <h2 class="titulo-destaque">
@@ -333,7 +317,7 @@
 
         </div>
 
-        <!-- BENEFÍCIOS -->
+   
         <div class="beneficios">
 
             <div class="beneficio">
@@ -400,7 +384,7 @@
 
     </section>
 
-    <!-- SOBRE -->
+
    <section id="sobre" class="section">
 
     <div class="sobre-container">
@@ -418,7 +402,7 @@
             <h2>Cultura da empresa</h2>
 
             <p>
-                A ECO MEKHA tem como propósito unir sustentabilidade, design moderno e consciência ambiental. A empresa acredita que é possível aliar estilo, qualidade e responsabilidade ecológica em um único produto, promovendo um consumo mais consciente sem abrir mão da estética e da inovação.
+                A Eco Mekha tem como propósito unir sustentabilidade, design moderno e consciência ambiental. A empresa acredita que é possível aliar estilo, qualidade e responsabilidade ecológica em um único produto, promovendo um consumo mais consciente sem abrir mão da estética e da inovação.
             </p>
 
             <h2>Como surgiu</h2>
@@ -430,14 +414,14 @@
             <h2>Fundadores</h2>
 
             <p>
-                A ECO MEKHA foi idealizada por um grupo de empreendedores apaixonados por inovação e meio ambiente: Arthur Holanda Cavalcante de Melo, Guilherme Luiz Morales, João Pedro da Silva Vicente, Marcelo Vieira da Silva, Marcus Vinicius Ferreira Siqueira, Maria Eduarda do Nascimento Gomes, Murilo Akio Ribeiro Kota, Pablo Henrique dos Santos Coutinho, Paulo Henrique da Conceição Pereira e Thiago Henrique Pereira Gomes. Cada um contribuiu com suas habilidades e ideias para construir uma marca que une design moderno, qualidade premium e compromisso ambiental.
+                A Eco Mekha foi idealizada por um grupo de empreendedores apaixonados por inovação e meio ambiente: Arthur Holanda de Melo, Guilherme Luiz Morales, João Pedro da Silva Vicente, Marcelo Vieira da Silva, Marcus Vinicius Ferreira Siqueira, Maria Eduarda do Nascimento Gomes, Murilo Akio Ribeiro Kota, Pablo Henrique dos Santos Coutinho, Paulo Henrique da Conceição Pereira e Thiago Henrique Pereira Gomes. Cada um contribuiu com suas habilidades e ideias para construir uma marca que une design moderno, qualidade premium e compromisso ambiental.
 
                     <p>Juntos, eles compartilham o objetivo de transformar o consumo e incentivar práticas mais sustentáveis por meio de produtos que realmente fazem a diferença para o planeta.</p>
             </p>
 
             <h2>Contato para compra/dúvidas</h2>
 
-            <p>📧 Email: contato@ecomekha@gmail.com</p>
+            <p>📧 Email: contato@ecomekha.com</p>
 
             <p>📱 Telefone: (11) 96989-9099</p>
 
@@ -447,7 +431,6 @@
 
 </section>
 
-    <!-- PRODUTOS -->
 <section id="produtos" class="section">
 
     <h2 class="titulo-destaque">
@@ -456,7 +439,166 @@
 
     <div class="grid">
 
-       
+<div class="card" onclick="abrirModal(
+'Kit Irrigação Inteligente',
+'Sistema automático para economia de água.',
+'R$ 435,45',
+'R$ 870,90',
+'-50%',
+'imagens/produto1.jpg'
+)">
+                        <img
+                        src="imagens/produto1.jpg"
+                        class="img"
+                        alt="Sistema automático para economia de água.">
+
+                        <p class="nome-produto">
+                           Kit Irrigação Inteligente
+                        </p>
+
+                        <div class="preco-container">
+
+                            <span class="preco-antigo">
+                                R$ 870,90
+                            </span>
+
+                            <div class="linha-preco">
+
+                                <span class="preco">
+                                    R$ 435,45
+                                </span>
+
+                                <span class="desconto">
+                                    -50%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                 
+<div class="card" onclick="abrirModal(
+'Sensor de Solo Smart',
+'Monitoramento de umidade e temperatura.',
+'R$ 322,63',
+'R$ 575,90',
+'-40%',
+'imagens/produto2.jpg'
+)">
+
+                        <img
+                        src="imagens/produto2.jpg"
+                        class="img"
+                        alt="Monitoramento de umidade e temperatura.">
+
+                        <p class="nome-produto">
+                           Sensor de Solo Smart
+                        </p>
+
+                        <div class="preco-container">
+
+                            <span class="preco-antigo">
+                                R$ 575,90
+                            </span>
+
+                            <div class="linha-preco">
+
+                                <span class="preco">
+                                    R$ 322,63
+                                </span>
+
+                                <span class="desconto">
+                                    -40%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+<div class="card" onclick="abrirModal(
+'Composteira Sustentável',
+'Transforma resíduos orgânicos em adubo natural.',
+'R$ 740,26',
+'R$ 870,90',
+'-15%',
+'imagens/produto3.jpg'
+)">
+                        <img
+                        src="imagens/produto3.jpg"
+                        class="img"
+                        alt="Transforma resíduos orgânicos em adubo natural.">
+
+                        <p class="nome-produto">
+                           Composteira Sustentável
+                        </p>
+
+                        <div class="preco-container">
+
+                            <span class="preco-antigo">
+                                R$ 870,90
+                            </span>
+
+                            <div class="linha-preco">
+
+                                <span class="preco">
+                                    R$ 740,26
+                                </span>
+
+                                <span class="desconto">
+                                    -15%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                
+<div class="card" onclick="abrirModal(
+'Estufa Modular Ecológica',
+'Estrutura sustentável para cultivo protegido.',
+'R$ 800,09',
+'R$ 890,90',
+'-10%',
+'imagens/produto4.jpg'
+)">
+
+                        <img
+                        src="imagens/produto4.jpg"
+                        class="img"
+                        alt="Estrutura sustentável para cultivo protegido.">
+
+                        <p class="nome-produto">
+                            Estufa Modular Ecológica
+                        </p>
+                        <div class="preco-container">
+
+                            <span class="preco-antigo">
+                                R$ 890,90
+                            </span>
+
+                            <div class="linha-preco">
+
+                                <span class="preco">
+                                    R$ 800,09
+                                </span>
+
+                                <span class="desconto">
+                                    -10%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
 <div class="card" onclick="abrirModal(
 'Kit Energia Solar Rural',
 'Energia limpa para pequenas produções agrícolas.',
@@ -629,7 +771,6 @@
 
   <div class="grid-projetos">
 
-        <!-- PROJETO 1 -->
         <div class="card" onclick="abrirModal(
             'Fazenda Solar Inteligente',
             'A Fazenda Solar Inteligente integra o Kit Energia Solar Rural com o Sistema de Irrigação Inteligente, criando um ambiente agrícola totalmente autônomo e sustentável. A energia gerada pelos painéis solares é utilizada para alimentar todo o sistema de irrigação automática, garantindo que as plantações recebam a quantidade ideal de água sem desperdício. Isso reduz custos de produção, diminui o impacto ambiental e torna a agricultura mais eficiente mesmo em áreas afastadas.',
@@ -644,7 +785,7 @@
 
         </div>
 
-        <!-- PROJETO 2 -->
+        
         <div class="card" onclick="abrirModal(
             'Horta Urbana Sustentável',
             'A Horta Urbana Sustentável combina a Horta Inteligente Indoor com a Composteira Sustentável, permitindo o cultivo de alimentos frescos dentro de ambientes urbanos. Enquanto a horta garante o crescimento controlado das plantas em pequenos espaços, a composteira transforma resíduos orgânicos do dia a dia em adubo natural, fechando um ciclo sustentável de produção.',
@@ -659,7 +800,7 @@
 
         </div>
 
-        <!-- PROJETO 3 -->
+        
         <div class="card" onclick="abrirModal(
             'Reuso Inteligente de Água',
             'O Reuso Inteligente de Água une o Sistema de Captação da Chuva com o Sensor de Solo Smart, criando um sistema eficiente de gerenciamento hídrico. A água da chuva é coletada e armazenada para ser reutilizada na irrigação, enquanto os sensores monitoram a umidade do solo em tempo real, liberando água apenas quando necessário.',
@@ -674,7 +815,7 @@
 
         </div>
 
-        <!-- PROJETO 4 -->
+        
         <div class="card" onclick="abrirModal(
             'Agricultura de Precisão',
             'A Agricultura de Precisão utiliza o Sensor de Solo Smart junto ao Pulverizador Ecológico para otimizar o cuidado com as plantações. Os sensores analisam continuamente as condições do solo, como umidade e temperatura, permitindo aplicação precisa de nutrientes.',
@@ -692,14 +833,13 @@
     </div>
 
 </section>
-<!-- AVALIAÇÕES -->
+
 <section id="avaliacoes" class="section">
 
     <h2>Avaliações</h2>
 
     <div class="grid">
 
-        <!-- AVALIAÇÃO 1 -->
     
 <div class="card avaliacao-card" onclick="abrirModal(
 'Atendimento impecável',
@@ -725,7 +865,6 @@
 
 </div>
 
-<!-- AVALIAÇÃO 2 -->
 <div class="card avaliacao-card" onclick="abrirModal(
 'Produto maravilhoso',
 'Achei a proposta da marca incrível. O acabamento do produto é muito bonito e sustentável ao mesmo tempo.',
@@ -750,7 +889,6 @@
 
 </div>
 
-<!-- AVALIAÇÃO 3 -->
 <div class="card avaliacao-card" onclick="abrirModal(
 'Experiência incrível',
 'Desde o atendimento até a entrega foi tudo perfeito. O produto chegou exatamente como esperado.',
@@ -775,7 +913,6 @@
 
 </div>
 
-<!-- AVALIAÇÃO 4 -->
 <div class="card avaliacao-card" onclick="abrirModal(
 'Super recomendo',
 'Design moderno, ótima qualidade e proposta ecológica muito interessante. Recomendo demais a marca.',
@@ -802,7 +939,6 @@
 
 </section>
 
-    <!-- MODAL -->
     <div id="modal" class="modal">
 
         <div class="modal-content">

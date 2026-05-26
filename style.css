@@ -1,30 +1,23 @@
-/* =========================
-   BASE
-========================= */
-
 html {
     font-size: 16px;
 }
 
 body {
     margin: 0;
-    background: #f8f6f1;
+    background: #F4F0E6;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
 
-/* =========================
-   HEADER
-========================= */
 
 header {
-    background: #434D36;
+    background: #1F3623;
     padding: 10px 20px;
     text-align: center;
 }
 
 .header {
-    background: #434D36;
+    background: #1F3623;
     padding: 13px 0;
     display: flex;
     justify-content: center;
@@ -45,10 +38,6 @@ header {
     margin: 0;
 }
 
-/* =========================
-   NAV
-========================= */
-
 nav {
     margin-top: 20px;
     display: flex;
@@ -58,9 +47,9 @@ nav {
 }
 
 nav a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
-    color: #3d3f3b;
+    color: #22300B;
     text-decoration: none;
     transition: 0.3s;
     cursor: pointer;
@@ -73,7 +62,6 @@ nav a:hover {
 
 }
 
-/* MENU CENTRAL */
 
 .menu {
     display: flex;
@@ -88,52 +76,12 @@ nav a:hover {
     font-size: 0.9rem;
 }
 
-/* =========================
-   LOGO
-========================= */
 
 .logo {
-    width: 125px;
+    width: 110px;
     height: auto;
 }
 
-/* =========================
-   BUSCA
-========================= */
-
-.search {
-    display: flex;
-    justify-content: center;
-    margin: 17px 0;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: white;
-    padding: 11px 14px;
-    border-radius: 10px;
-    width: 350px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.search-box input {
-    border: none;
-    outline: none;
-    font-size: 0.85rem;
-    background: transparent;
-    flex: 1;
-}
-
-.lupa {
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-/* =========================
-   SEÇÕES
-========================= */
 
 .section {
     display: none;
@@ -144,9 +92,6 @@ nav a:hover {
     display: block;
 }
 
-/* =========================
-   HOME LAYOUT
-========================= */
 
 .container {
     display: flex;
@@ -154,15 +99,12 @@ nav a:hover {
     align-items: flex-start;
 }
 
-/* =========================
-   PROMOÇÃO
-========================= */
 
 .promo {
     width: 260px;
     min-width: 250px;
     padding: 15px;
-    background: #dfe8ce;
+    background: #80a166;
     border-radius: 13px;
     text-align: center;
     height: 400px;
@@ -175,34 +117,31 @@ nav a:hover {
 }
 
 .promo-texto {
-    color: #36411f;
+    color: #dbefaf;
     font-size: 1.7rem;
     margin: 0;
 }
 
 .promo-desconto {
-    color: #36411f;
+    color: #dbefaf;
     font-size: 3rem;
     margin: 0;
     font-weight: bold;
 }
 
 .promo-subtexto {
-    color: #36411f;
+    color: #dbefaf;
     font-size: 1.5rem;
 }
 
-/* =========================
-   PRODUTOS
-========================= */
 
 .produtos {
     flex: 1;
 }
 
 .titulo-destaque {
-    color: #212615;
-    font-size: 1.4rem;
+    color: #0e5c08;
+    font-size: 1.5rem;
 }
 
 .grid {
@@ -211,10 +150,9 @@ nav a:hover {
     gap: 15px;
 }
 
-/* CARD */
 .card {
     cursor: pointer;
-    background: white;
+    background: rgb(157, 195, 159);
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.06);
@@ -225,7 +163,6 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-/* IMAGEM */
 .img {
     width: 100%;
     height: 200px;
@@ -234,12 +171,11 @@ nav a:hover {
 }
 
 .nome-produto {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-top: 8px;
 }
 
-/* PREÇOS */
 
 .preco-container {
     margin-top: 9px;
@@ -247,8 +183,8 @@ nav a:hover {
 }
 
 .preco-antigo {
-    font-size: 0.8rem;
-    color: #888;
+    font-size: 1.0rem;
+    color: #3d3c3c;
     text-decoration: line-through;
 }
 
@@ -260,7 +196,7 @@ nav a:hover {
 }
 
 .preco {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
      text-align: center;
     
@@ -269,19 +205,16 @@ nav a:hover {
 
 
 .desconto {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: red;
     font-weight: bold;
      text-align: center;
 }
 
-/* =========================
-   BENEFÍCIOS
-========================= */
 
 .beneficios {
     margin-top: 20px;
-    background: white;
+    background: #b1c7b5;
     border-radius: 10px;
     padding: 15px;
     display: flex;
@@ -294,10 +227,6 @@ nav a:hover {
     gap: 8px;
     align-items: flex-start;
 }
-
-/* =========================
-   SOBRE
-========================= */
 
 .sobre-container {
     display: flex;
@@ -331,25 +260,21 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* =========================
-   AVALIAÇÕES
-========================= */
-
 #avaliacoes h2 {
     font-size: 1.5rem;
-    color: #212615;
+    color: #0E5c08;
     margin-bottom: 20px;
 }
 
 .avaliacao-card {
-    background: white;
+    background: #c5d6c6;
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
 .stars {
-    color: #FFD700;
+    color: #efcf4f;
     font-size: 1.2rem;
 }
 
@@ -363,7 +288,6 @@ nav a:hover {
     color: #555;
 }
 
-/* MODAL */
 .modal {
     display: none;
     position: fixed;
@@ -377,7 +301,6 @@ nav a:hover {
     align-items: center;
 }
 
-/* caixa do modal */
 .modal-content {
     background: white;
     width: 600px;
@@ -388,7 +311,6 @@ nav a:hover {
     text-align: center;
 }
 
-/* IMAGEM */
 .modal-img {
     width: 100%;
     height: 400px;
@@ -421,9 +343,6 @@ nav a:hover {
     color: red;
 }
 
-/* =========================
-   RESPONSIVO
-========================= */
 
 @media (max-width: 900px) {
 
@@ -447,50 +366,58 @@ nav a:hover {
     .texto {
         width: 100%;
     }
- 
-/* =========================
-   PROJETOS - FORÇAR 2x2
-========================= */
+}
 
-#projetos .grid-projetos {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+.projetos { 
+    flex: 1;
+}
+.titulo-projetos {
+    color: #0e5c08;
+    font-size: 1.5rem;
+}
+
+#projetos .nome-produto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 15px;
 }
 
-/* cards só do projetos */
-#projetos .card {
-    background: white;
+.card {
+    cursor: pointer;
+    background: #d8dbd8;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-    cursor: pointer;
+    transition: 0.3s;
 }
 
-/* imagem */
-#projetos .img {
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-/* título */
-#projetos .nome-produto {
-    font-size: 1rem;
+.nome-produto {
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 8px;
 }
-#projetos .grid-projetos > .card {
-    width: 100%;
-}
-/* responsivo */
+
+
 @media (max-width: 900px) {
-    #projetos .grid-projetos {
-        grid-template-columns: 1fr !important;
-    }
-}/* ========================= */
-@media (max-width: 900px) {
+
     .container {
         flex-direction: column;
     }
@@ -511,5 +438,4 @@ nav a:hover {
     .texto {
         width: 100%;
     }
-}
 }
