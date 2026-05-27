@@ -1,0 +1,11 @@
+Olá! Seja bem vindo(a)!
+
+Para melhor experiência, utilize o executável em tela cheia \^u^/
+
+Para acessar o login do Gerente, utilize os seguintes dados:
+- Usuário: Manager
+- Senha: 1234
+
+Para acessar o login de Vendedor, utilize os seguintes dados:
+- Usuário: AE
+- Não é solicitado senha
